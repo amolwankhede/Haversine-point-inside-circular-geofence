@@ -105,8 +105,9 @@
             this.txtR.Name = "txtR";
             this.txtR.Size = new System.Drawing.Size(100, 25);
             this.txtR.TabIndex = 6;
-            this.txtR.Text = "0.1";
+            this.txtR.Text = "0.05";
             this.txtR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtR.TextChanged += new System.EventHandler(this.txtR_TextChanged);
             // 
             // txtLong
             // 
@@ -114,6 +115,7 @@
             this.txtLong.Name = "txtLong";
             this.txtLong.Size = new System.Drawing.Size(112, 25);
             this.txtLong.TabIndex = 4;
+            this.txtLong.Text = "-122.11402486016958";
             // 
             // txtLat
             // 
@@ -121,6 +123,7 @@
             this.txtLat.Name = "txtLat";
             this.txtLat.Size = new System.Drawing.Size(112, 25);
             this.txtLat.TabIndex = 3;
+            this.txtLat.Text = "37.3956302464915";
             // 
             // groupBox1
             // 

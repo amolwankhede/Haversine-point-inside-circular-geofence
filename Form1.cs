@@ -35,18 +35,22 @@ namespace Haversine
             double redius = double.Parse(txtR.Text);
             if (result > redius)
             {
-                lblResults.Text = "The query lat long are INSIDE the circular gefence";
-                lblResults.ForeColor = Color.Green;
+                lblResults.Text = "The query lat long are OUTSIDE the circular gefence";
+                lblResults.ForeColor = Color.Red;
+                
             }
             else
             {
-                lblResults.Text = "The query lat long are OUTSIDE the circular gefence";
-                lblResults.ForeColor = Color.Red;
+                lblResults.Text = "The query lat long are Inside the circular gefence";
+                lblResults.ForeColor = Color.Green;
             }
 
         }
 
+        private void txtR_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 
     /// <summary>
